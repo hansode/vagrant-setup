@@ -11,7 +11,6 @@ function yum() {
 }
 
 addpkgs="
- bridge-utils tunctl
 "
 
 if [[ -n "$(echo ${addpkgs})" ]]; then
