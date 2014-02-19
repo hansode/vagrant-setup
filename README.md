@@ -1,6 +1,8 @@
 vagrant-setup
 =============
 
+[![Build Status](https://travis-ci.org/hansode/vagrant-setup.png)](https://travis-ci.org/hansode/vagrant-setup)
+
 Requirements
 ------------
 
