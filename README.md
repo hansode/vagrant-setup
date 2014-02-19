@@ -29,4 +29,17 @@ Getting Started
 ```
 $ cd /path/to/dir
 $ vagrant-setup testing-box
+
+sending incremental file list
+created directory testing-box
+./
+Vagrantfile
+bootstrap.sh
+config.d/
+config.d/base.sh
+config.d/node01.sh
+
+sent 1860 bytes  received 95 bytes  3910.00 bytes/sec
+total size is 1511  speedup is 0.77
+Initialized empty Git repository in /path/to/dir/testing-box/.git/
 ```
