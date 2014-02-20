@@ -5,3 +5,5 @@
 #
 set -e
 set -x
+
+# Do some changes ...
