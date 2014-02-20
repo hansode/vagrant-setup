@@ -28,10 +28,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    #v.vmx["ethernet1.wakeOnPcktRcv"]  = "FALSE"
   end
 
-  config.vm.provision "shell", path: "bootstrap.sh"
-  config.vm.provision "shell", path: "config.d/base.sh"
+  config.vm.provision "shell", path: "bootstrap.sh"     # Bootstrapping: package installation (phase:1)
+  config.vm.provision "shell", path: "config.d/base.sh" # Configuration: node-common          (phase:2)
 
  #config.vm.define "node01" do |node|
- #  node.vm.provision "shell", path: "config.d/node01.sh"
+ #  node.vm.hostname = "node01"
+ #  node.vm.provision "shell", path: "config.d/#{node.vm.hostname}.sh" # Configuration: node-specific (phase:2.5)
  #end
 end
