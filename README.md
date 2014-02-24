@@ -22,7 +22,7 @@ Usage
 -----
 
 ```
-$ vagrant-setup <box-name>
+$ vagrant-setup <project-name>
 ```
 
 Getting Started
