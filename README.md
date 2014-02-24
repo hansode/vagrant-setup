@@ -8,6 +8,8 @@ Requirements
 
 + [bash](http://www.gnu.org/software/bash/)
 + [make](http://www.gnu.org/software/make/)
++ [rsync](http://rsync.samba.org/)
++ [git](http://git-scm.com/)
 
 Installation
 ------------
