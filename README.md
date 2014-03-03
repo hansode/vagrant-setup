@@ -92,6 +92,7 @@ end
 #  bash
 #
 set -e
+set -o pipefail
 set -x
 
 function yum() {
@@ -116,6 +117,7 @@ fi
 #  bash
 #
 set -e
+set -o pipefail
 set -x
 
 # Do some changes ...
@@ -130,6 +132,7 @@ set -x
 #  bash
 #
 set -e
+set -o pipefail
 set -x
 
 # Do some changes ...
