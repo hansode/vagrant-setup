@@ -36,7 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
  #  node.vm.provision "shell", path: "config.d/#{node.vm.hostname}.sh" # Configuration: node-specific (phase:2.5)
  #end
 
- #1.times.each { |i|
+ #2.times.each { |i|
  #  name = sprintf("node%02d", i + 1)
  #  config.vm.define "#{name}" do |node|
  #    node.vm.hostname = "#{name}"
