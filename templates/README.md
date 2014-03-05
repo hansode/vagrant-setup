@@ -1,5 +1,11 @@
-testing box
-===========
+Test Verification Box
+=====================
+
+System Requirements
+-------------------
+
++ [Vagrant](http://www.vagrantup.com/downloads.html)
++ [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 Getting Started
 ---------------
