@@ -4,7 +4,7 @@
 #
 # requires:
 #  bash
-#  rsync, git
+#  rsync
 #
 
 function vagrant_deploy() {
@@ -14,23 +14,11 @@ function vagrant_deploy() {
   rsync -av ${BASH_SOURCE[0]%/*}/../templates/ ${target_dir}
 }
 
-function vagrant_setup_git() {
-  local target_dir=${1}
-  [[ -n "${target_dir}" ]] || { echo "[ERROR] Invalid argument: target_dir:${target_dir} (${BASH_SOURCE[0]##*/}:${LINENO})" >&2; return 1; }
-
-  cd ${target_dir}
-
-  if ! [[ -d .git ]]; then
-    git init
-  fi
-}
-
 function vagrant_cli() {
   local target_dir=${1:-vmbuilder-box}
   [[ -n "${target_dir}" ]] || { echo "[ERROR] Invalid argument: target_dir:${target_dir} (${BASH_SOURCE[0]##*/}:${LINENO})" >&2; return 1; }
 
   vagrant_deploy ${target_dir}
-  (vagrant_setup_git ${target_dir})
 }
 
 # CLI

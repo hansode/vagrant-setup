@@ -9,7 +9,6 @@ Requirements
 + [bash](http://www.gnu.org/software/bash/)
 + [make](http://www.gnu.org/software/make/)
 + [rsync](http://rsync.samba.org/)
-+ [git](http://git-scm.com/)
 
 Installation
 ------------
@@ -43,7 +42,6 @@ config.d/node01.sh
 
 sent 1860 bytes  received 95 bytes  3910.00 bytes/sec
 total size is 1511  speedup is 0.77
-Initialized empty Git repository in /path/to/dir/testing-box/.git/
 ```
 
 Shell Provisioner Based Vagrant Workflow
