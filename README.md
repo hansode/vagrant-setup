@@ -69,7 +69,7 @@ project/
 
 ```
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "redhat-64"
+  config.vm.box = "hansode/centos-6.5-x86_64"
 
   config.vm.provision "shell", path: "bootstrap.sh"     # Bootstrapping: package installation (phase:1)
   config.vm.provision "shell", path: "config.d/base.sh" # Configuration: node-common          (phase:2)
