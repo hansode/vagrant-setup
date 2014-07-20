@@ -1,16 +1,23 @@
 SHELL=/bin/bash
 PROVIDER=virtualbox
-TARGETS=build reload clean status
+TARGETS=all build clean up reload halt destroy status
 
-all: $(TARGETS)
+all:
 
-build:
+build: up
+
+clean: destroy
+
+up:
 	time vagrant up --provider $(PROVIDER)
 
 reload:
 	time vagrant reload
 
-clean:
+halt:
+	time vagrant halt
+
+destroy:
 	time vagrant destroy -f
 
 status:
