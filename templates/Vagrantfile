@@ -20,6 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    #v.gui = true
    #v.vmx["memsize"]  = "2048"
    #v.vmx["numvcpus"] = "2"
+   #v.vmx["vhv.enable"] = "TRUE"
 
    ## eth1
    #v.vmx["ethernet1.present"]        = "TRUE"
