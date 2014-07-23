@@ -29,6 +29,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    #v.vmx["ethernet1.wakeOnPcktRcv"]  = "FALSE"
   end
 
+  config.ssh.forward_agent = true
+
   config.vm.provision "shell", path: "bootstrap.sh"     # Bootstrapping: package installation (phase:1)
   config.vm.provision "shell", path: "config.d/base.sh" # Configuration: node-common          (phase:2)
 
