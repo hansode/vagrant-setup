@@ -2,7 +2,7 @@ SHELL=/bin/bash
 PROVIDER=virtualbox
 TARGETS=all build clean up reload halt destroy status
 
-all:
+all: build
 
 build: up
 
