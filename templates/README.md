@@ -11,7 +11,7 @@ Getting Started
 ---------------
 
 ```
-$ vagrant up
+$ make build
 ```
 
 License
