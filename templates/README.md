@@ -11,7 +11,7 @@ Getting Started
 ---------------
 
 ```
-$ make build
+$ make up
 ```
 
 License
