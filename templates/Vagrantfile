@@ -12,6 +12,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
    #override.vm.synced_folder ".", "/vagrant", disabled: true
    #v.gui = true
    #v.customize ["modifyvm", :id, "--memory", "1024"]
+
+   # [Vagrant / virtualbox DNS 10.0.2.3 not working](http://serverfault.com/questions/453185/vagrant-virtualbox-dns-10-0-2-3-not-working)
+   #
+   # Enabling DNS proxy in NAT mode
+   # > VBoxManage modifyvm "VM name" --natdnsproxy1 on
+   # Using the host's resolver as a DNS proxy in NAT mode
+   # > VBoxManage modifyvm "VM name" --natdnshostresolver1 on
+   #
+   v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 
   config.vm.provider :vmware_workstation do |v, override|
