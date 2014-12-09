@@ -12,6 +12,7 @@ up:
 	time vagrant up --provider $(PROVIDER)
 
 package:
+	rm -f package.box
 	time vagrant package
 
 reload:
