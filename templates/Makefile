@@ -11,6 +11,9 @@ clean: destroy
 up:
 	time vagrant up --provider $(PROVIDER)
 
+package:
+	time vagrant package
+
 reload:
 	time vagrant reload
 
