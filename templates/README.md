@@ -17,6 +17,11 @@ Getting Started
 $ make up
 ```
 
+References
+----------
+
++ ...
+
 License
 -------
 
