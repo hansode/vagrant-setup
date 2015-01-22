@@ -13,8 +13,16 @@ Requirements
 Getting Started
 ---------------
 
+Create a VM.
+
 ```
 $ make up
+```
+
+Connect to the VM.
+
+```
+$ vagrant ssh
 ```
 
 References
