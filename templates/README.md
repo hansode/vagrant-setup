@@ -6,7 +6,7 @@ Requirements
 
 + Vagrant (>= 1.6.5)(http://www.vagrantup.com/downloads.html)
 + Platforms
-  + Virtualbox (>= 4.3.20)(https://www.virtualbox.org/wiki/Downloads)
+  + Virtualbox (>= 4.3.22)(https://www.virtualbox.org/wiki/Downloads)
   + VMware Workstaion (>= 10)(https://www.vmware.com/go/downloadworkstation)
 + Vagrant VMware plugin if you're using vmware (http://www.vagrantup.com/vmware)
 
