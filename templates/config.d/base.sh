@@ -8,3 +8,9 @@ set -o pipefail
 set -x
 
 # Do some changes ...
+
+user=${user:-vagrant}
+
+su - ${user} -c "bash -ex" <<'EOS'
+  whoami
+EOS
